@@ -1,0 +1,165 @@
+#banner {
+  background-image: image-url('background_image.JPG');
+  color: white;
+  padding: 150px 0;
+  background-size: cover;
+  height: 650px;
+  padding-left: 50px;
+
+  h1 {
+    font-size: 150px;
+    color: white;
+    font-family: $brandon-light;
+  }
+  p {
+    font-size: 50px;
+    font-weight: 100;
+  }
+}
+.card{
+
+  padding: 10px;
+  font-weight: 300;
+  h2{
+    font-size: 22px;
+  }
+}
+
+#banner, #description, #newsletter {
+  position: relative;
+}
+
+
+
+
+.scroll-btn{
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  &:hover{
+    color: white;
+  }
+}
+
+#underlined-title
+{
+  width: 150px;
+  border-bottom: solid 1px $test; 
+
+}
+
+h2 {
+  margin-top: 0.5em;
+  text-transform: upcase;
+  font-size: 40px;
+  font-family: $brandon-light;
+  letter-spacing: 3px;
+  
+}
+
+h3 {
+  margin-top: 0.5em;
+  font-size: 30px;
+  font-family: $brandon-light;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+
+
+#underlined-title
+{
+  width: 150px;
+  border-bottom: solid 1px #800040; 
+
+}
+
+h2 {
+  margin-top: 0.5em;
+  font-size: 40px;
+ 
+  letter-spacing: 3px;
+  
+}
+
+
+#menu-description {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left:8%;
+  border: 2px solid rgba(128,0,0, 0.4);
+  width:310px;
+  border-radius: 1%;
+  box-shadow: 4px 2px 2px #CCCCCC;
+} 
+
+#menu-description:hover {
+  border: 2px solid rgba(128,0,0, 1);
+  
+} 
+
+#menu-middle {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 4px;
+  padding: 2px;
+  width:280px;
+}
+
+#menu-description > img{
+  margin: none;
+  width: 300px;
+  padding-left: 5px;
+  padding-top: 5px; 
+} 
+
+#menu-bottom
+{
+  
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+  border: 2px solid $body-bg;
+  width: 280px;
+  border-top: 2px solid rgba(128,0,0, 0.4);
+
+ p{
+  right: 20px;
+  margin-top: 2px;}
+
+img{
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-left:66px;
+  margin-right: 1px;}
+
+
+}
+
+
+#menu-bottom:hover {
+
+  border-top: 2px solid #800000;
+}
+
+
+
+.left-margin {
+  margin-left: 65px;
+
+
+}
+
+
+#bowl-icone
+{
+  
+  float: top;
+}
