@@ -136,10 +136,24 @@ title: Welcome to Ôm
 
 
 
+<div id="testimonial" class="padded">
+    <div class="container">
+      <div class="row">
+        
+              <% data.testimonials.each do | testimonial | %>
+                <div class="col-xs-12 col-sm-6"> 
+                    <div  class="text-center testimonial">
+                        <%= image_tag testimonial.image_file, class:"img-circle" %>
+                        <h3> <%= testimonial.name %> </h3>
+                        <p> <%= testimonial.content %> </p>
+                    </div>
+                </div>      
+              <% end %>
+       
+      </div>
+    </div>
 
-
-
-
+</div>
 
 
                         <!-- ***********************fin troisième div **************-->
