@@ -12,7 +12,7 @@ title: Welcome to Ôm
                                   <div class="spacer"></div> 
                                   
 
-              <a href="#" class="btn btn-medium "> Découvrez notre menu !</a>
+              <a href="#Les-menus" class="btn btn-medium "> Découvrez notre menu !</a>
    
 
      <a href="#description"><i class="fa fa-angle-down fa-6 pulse scroll-btn"></i></a>
@@ -73,67 +73,50 @@ title: Welcome to Ôm
 
   <a href="#Les-menus"><i class="fa fa-angle-down fa-6 pulse scroll-btn"></i></a>
 </div>
+     
 
-                          <!-- ***********************fin deuxième div **************-->
+                          <!-- ***********************Les Menus **************-->
+
 
 
 <div id="Les-menus" class="bg-success little-padded">
   <strong> <h2 class="text-center">Les menus</h2></strong>
   <div id="underlined-title" class="center-block"> </div>
 
-  <div id="wholemenu-content">
-      <div id="menu-description">
-        <%= image_tag "test-image-menu.png" %>
-        <div id="menu-middle">
-          <h4> Menu Bowl + boisson</h4>
-          <p class="text-justify">Un menu équilibré, parfait pour la pause du midi. Un plein de vitalité, et hop, c'est reparti pour une après midi de boulot</p>
-        </div>
-        <div id="menu-bottom">
-           <%= image_tag "icone-menudescription-group.png" %>      
-           <ul class="list-inline text-center" id="price-list">
-              <li id="prix-menu"> 9  <i class="fas fa-euro-sign"> </i> </li>
-              <li id="prix-menu" class="left-margin "> 11  <i class="fas fa-euro-sign"> </i> </li>
-          </ul>
-        </div>
-        
-      </div>
+        <div id="products">
 
+               <div class="container">
+                <div class="row">
+                      <% data.products.each do | product | %>
+                        
+                          <div class="col-xs-12 col-sm-4">
+                              <div id="menu-description">
+                                
+                                  <%= image_tag product.image_file, class:"photo-menu" %>
+                                  
+                                  <div id="menu-middle">
+                                   <h4> <%= product.name %> </h4>
+                                   <p class="text-justify"> <%= product.content %> </p> 
+                                  </div>
+                                  <div id="menu-bottom">
+                                    <%= image_tag product.iconepicture %>
+                                    <ul class="list-inline">
+                                      <li class="prix-menu1"> <%= product.price1 %> </li>
+                                      <li class="prix-menu2"> <%= product.price2 %></li>
+                                    </ul>
+                                  </div>
+                              </div>    
+                           </div>
+                      <% end %>
+                </div>
+              </div>
 
-      <div id="menu-description">
-         <%= image_tag "test-image-menu.png" %>
-        <div id="menu-middle">
-          <h4> Menu Bowl + soupe</h4>
-          <p class="text-justify">Un menu équilibré, parfait pour la pause du midi. Un plein de vitalité, et hop, c'est reparti pour une après midi de boulot</p>
-        </div>
-        <div id="menu-bottom">
-           <%= image_tag "icone-menudescription-group.png" %>
-          
-          <ul class="list-inline text-center" id="price-list">
-              <li id="prix-menu"> 9  <i class="fas fa-euro-sign"> </i> </li>
-              <li id="prix-menu" class="left-margin "> 11  <i class="fas fa-euro-sign"> </i> </li>
-          </ul>
-        </div>
-        
-      </div>
+        </div>  
 
-      <div id="menu-description">
-         <%= image_tag "test-image-menu.png" %>
-        <div id="menu-middle">
-          <h4> Menu Bowl + boisson + soupe</h4>
-          <p class="text-justify">Un menu équilibré, parfait pour la pause du midi. Un plein de vitalité, et hop, c'est reparti pour une après midi de boulot</p>
-        </div>
-        <div id="menu-bottom">
-          <%= image_tag "icone-menudescription-group.png" %>
-            <ul class="list-inline text-center" id="price-list">
-              <li id="prix-menu"> 10  <i class="fas fa-euro-sign"> </i> </li>
-              <li id="prix-menu" class="left-margin "> 13  <i class="fas fa-euro-sign"> </i> </li>
-          </ul>
-        </div>
-        
-      </div>
-  </div>
 </div>
 
+
+                            <!-- ***********************Testimonials **************-->
 
 
 <div id="testimonial" class="padded">
@@ -156,7 +139,7 @@ title: Welcome to Ôm
 </div>
 
 
-                        <!-- ***********************fin troisième div **************-->
+                            <!-- *********************** Google Map **************-->
 
 
 
